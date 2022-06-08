@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-body {
-    background-color: white;
+* {
     box-sizing: border-box;
 }
 
+body {
+    background-color: lightgray;
+}
+
 .content {
+    background-color: #EEEEEE;
     width: 414px;
     margin: 0 auto;
-    background-color: #EEEEEE;
 }
 
 .top-bar {
-    padding: 20px;
-    width: 414px;
+    width: inherit;
     height: 92px;
+    padding: 20px;
     background-color: #CF2B2B;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
 }
 
 h1 {
@@ -33,6 +41,7 @@ h2 {
     font-family: 'Righteous', cursive;
     color: #333333;
     font-weight: 400;
+    font-size: 26px;
 }
 
 h3 {
@@ -45,6 +54,8 @@ h3 {
 .food {
     display: flex;
     flex-direction: column;
+    margin-top: 92px;
+    padding: 20px 0 92px;
 }
 
 .food img {
@@ -57,13 +68,19 @@ h3 {
 }
 
 .food h2 {
-    margin-left: 16px;
+    margin-left: 15px;
 }
 
 .food-item {
     width: 172px;
     height: 216px;
-    margin: 20px 16px;
+    margin: 20px 0px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    border-radius: 9px;
 }
 
 .item-name {
@@ -86,3 +103,29 @@ h3 {
     font-size: 16px;
     font-weight: 400;
 }
+
+.bottom-bar {
+    width: inherit;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+.bottom-bar button {
+    display: inline-block;
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0;
+    margin: 0 auto;
+}
+    
