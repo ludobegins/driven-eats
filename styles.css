@@ -64,7 +64,7 @@ h3 {
 
 .food-choice {
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 
 .food h2 {
