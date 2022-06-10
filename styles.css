@@ -60,6 +60,9 @@ h3 {
 
 .food img {
     border-radius: 4px;
+    height: 87px;
+    width: 144px;
+    object-fit: cover;
 }
 
 .food-choice {
