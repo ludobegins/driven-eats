@@ -1,6 +1,6 @@
 let texto_original_botao = document.querySelector('.botao-fim').innerHTML;
 const texto_modificado_botao = 'Fechar pedido';
-const url_base_zap = 'https://wa.me/21996602254?text='
+const url_base_zap = 'https://wa.me/5521996602254?text='
 
 function toggleSelection(el){
     el.classList.toggle('selected');
