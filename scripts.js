@@ -4,12 +4,15 @@ const url_base_zap = 'https://wa.me/5521996602254?text='
 
 function toggleSelection(el){
     el.classList.toggle('selected');
+    console.log(el);
+    el.querySelector('.checkmark').classList.toggle('hidden');
     
     let food_items = document.querySelectorAll('.food-item');
     for(let i=0; i< food_items.length; i++){
         if (food_items[i] !== el){
             if (food_items[i].classList[1] === el.classList[1]){
                 food_items[i].classList.remove('selected');
+                food_items[i].querySelector('.checkmark').classList.add('hidden');
             }
         }
     }
