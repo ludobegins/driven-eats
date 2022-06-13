@@ -1,11 +1,10 @@
 let texto_original_botao = document.querySelector('.botao-fim').innerHTML;
 const texto_modificado_botao = 'Fechar pedido';
-const url_base_zap = 'https://wa.me/5521996602254?text='
+const url_base_zap = 'https://wa.me/5521999901234?text='
 
 function toggleSelection(el){
-    el.classList.toggle('selected');
-    console.log(el);
-    el.querySelector('.checkmark').classList.toggle('hidden');
+    el.classList.add('selected');  // se quisesse desmarcar o item selecionado, bastaria trocar add por toggle
+    el.querySelector('.checkmark').classList.remove('hidden'); // e aqui trocaria remove por toggle
     
     let food_items = document.querySelectorAll('.food-item');
     for(let i=0; i< food_items.length; i++){

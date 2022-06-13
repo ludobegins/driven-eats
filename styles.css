@@ -90,6 +90,7 @@ h3 {
 
 .selected{
     border: 5px solid #32B72F;
+    padding: 10px;
 }
 
 .item-name {
@@ -154,5 +155,16 @@ h3 {
 
 .fechar-pedido {
     background-color: #32B72F;
+}
+
+@media(max-width:414px){
+    .content {
+        width: 100vw;
+    }
+
+    .botao-fim {
+        width: 90%;
+    }
+
 }
     
